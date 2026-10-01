@@ -1,0 +1,58 @@
+# ---------- Node (telemetry extraction) ----------
+node_modules/
+npm-debug.log*
+
+# ---------- Python / Jupyter ----------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# ---------- Raw GoPro files & video ----------
+*.360
+*.LRV
+*.lrv
+*.THM
+*.thm
+*.mp4
+*.MP4
+
+# ---------- Generated data (telemetry, CSV, frames, masks) ----------
+# Telemetry JSON from extract_*.js, without ignoring package.json / package-lock.json
+metadata/
+*metadata*.json
+GS*.json
+*.csv
+summary_txt_fps*.txt
+*.jpg
+*.JPG
+*.png
+!docs/**/*.png
+
+# Dataset folders created by the notebooks if run inside the repo
+1.360_raw/
+2.360_mp4/
+3.frame_360/
+frame_360/
+4.frame_360_split/
+4.camera_360_geotag/
+5.camera_geotag/
+5.camera_geotag_smooth/
+input/
+output/
+output_*/
+
+# ---------- Metashape / 3DGS outputs ----------
+*.psx
+*.files/
+*.ply
+cameras.xml
+
+# ---------- OS / editor ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
